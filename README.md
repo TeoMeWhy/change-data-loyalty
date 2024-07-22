@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 3. Configure a autenticação da api do Kaggle:
 
-Confira esse artigo disponível no Kaggle para você criar sua API key (www.kaggle.com/docs/api)[https://www.kaggle.com/docs/api]
+Confira esse artigo disponível no Kaggle para você criar sua API key [www.kaggle.com/docs/api](https://www.kaggle.com/docs/api)
 
 ## Execução
 
