@@ -1,10 +1,26 @@
 import argparse
+import subprocess
 
 import pyarrow
 import fastparquet
 from tqdm import tqdm
 
 from cdc import CDC
+
+def download():
+    cmd = [
+        "kaggle",
+        "datasets",
+        "download",
+        "-d",
+        "teocalvo/teomewhy-loyalty-system",
+        "--unzip",
+        "--force",
+        "--path",
+        "../data/"
+        ]
+    
+    subprocess.run(cmd)
 
 # %%
 def main():
@@ -14,6 +30,8 @@ def main():
     parser.add_argument("--new", "-n", default="../data/database.db")
     parser.add_argument("--old", "-o", default="../data/database_old.db")
     args = parser.parse_args()
+
+    download()
 
     for i in range(len(args.tables)):
         cdc = CDC(path_new=args.new,
