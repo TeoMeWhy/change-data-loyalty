@@ -2,6 +2,18 @@
 
 Uma lib simples para você poder criar arquivos de CDC a partir de um dataset no Kaggle.
 
+## Sobre
+
+Com base nos dados do kaggle (que você encontra [aqui](https://www.kaggle.com/datasets/teocalvo/teomewhy-loyalty-system)), criamos os arquivos de Change Data Capture (CDC).
+
+A ideia é comprar os dois databases:
+- _database.db_: Dados da versão atual do banco de dados do nosso sistema de pontos
+- _database_old.db_: Dados da versão anterior do nosso sistema de pontos
+
+Com bases nos arquivos criados, voc6e pode realizar ingestão de dados utilizando esses arquivos _.parquet_s.
+
+- Playlist sobre consumo do CDC no datalake com Spark Streaming + Upsert: [Lago do Mago](https://www.youtube.com/playlist?list=PLvlkVRRKOYFTcLehYZ2Bd5hGIcLH0dJHE)
+
 ## Setup
 
 1. Crie um ambiente novo com ajuda do anaconda:
