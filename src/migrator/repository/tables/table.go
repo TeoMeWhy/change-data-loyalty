@@ -101,7 +101,7 @@ func NewTableRepository[T any](name, schema string, db *sqlx.DB, config *configs
 	queryPath := fmt.Sprintf("%s/%s/%s.sql", config.QueryBaseFolder, schema, name)
 	query, _ := readQueryFromFile(queryPath)
 
-	folder := fmt.Sprintf("%s/%s", config.DataBaseFolder, schema)
+	folder := fmt.Sprintf("%s/%s", config.DataFolder, schema)
 
 	repo := &TableRepository[T]{
 		DB:     db,

@@ -20,7 +20,7 @@ type pairTest struct {
 
 var config = &configs.Config{
 	QueryBaseFolder: "testdata/query",
-	DataBaseFolder:  "testdata/data",
+	DataFolder:      "testdata/data",
 }
 
 func TestReadValidData(t *testing.T) {
