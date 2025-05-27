@@ -9,7 +9,6 @@ if dotenv.load_dotenv("../../.env"):
     print("Environment variables loaded successfully.")
 else:
     print("Failed to load environment variables.")
-    exit(1)
 
 
 DATA_FOLDER = os.getenv("DATA_FOLDER", "../../data/points")

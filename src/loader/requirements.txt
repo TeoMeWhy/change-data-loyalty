@@ -1,0 +1,2 @@
+kaggle==1.7.4.5
+python-dotenv==1.1.0
