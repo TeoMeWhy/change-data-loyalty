@@ -1,0 +1,26 @@
+services:
+  loader:
+    build:
+      context: src/loader
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+    environment:
+      - KAGGLE_USERNAME=${KAGGLE_USERNAME}
+      - KAGGLE_KEY=${KAGGLE_KEY}
+      - DATA_FOLDER=${DATA_FOLDER}
+    depends_on:
+      - migrator
+
+  migrator:
+    build:
+      context: src/migrator
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+    environment:
+      - HOST_DB=${HOST_DB}
+      - PORT_DB=${PORT_DB}
+      - USER_DB=${USER_DB}
+      - PASSWORD_DB=${PASSWORD_DB}
+      - DATA_FOLDER=${DATA_FOLDER}
