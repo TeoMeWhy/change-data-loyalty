@@ -5,7 +5,7 @@ import (
 )
 
 type Config struct {
-	QueryBaseFolder string `default:"../query"`
+	QueryBaseFolder string `default:"query"`
 	DataFolder      string `default:"../../data"`
 
 	HostDB     string `default:"localhost" split_words:"true"`
