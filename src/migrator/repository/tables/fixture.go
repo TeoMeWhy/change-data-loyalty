@@ -42,7 +42,7 @@ func makeTables() []schemas.CustomerSchema {
 
 	return []schemas.CustomerSchema{
 		{
-			IdCustomer: "1",
+			IdCliente: "1",
 			// DescCustomerName: "John Doe",
 			// CodCpf:           "12345678901",
 			// DescEmail:        "john@example.com",
@@ -50,12 +50,12 @@ func makeTables() []schemas.CustomerSchema {
 			// IdYouTube:        "4723967",
 			// IdBlueSky:        "3190423",
 			// IdInstagram:      "23094923",
-			NrPoints:  100,
-			CreatedAt: time1,
-			UpdatedAt: time2,
+			QtdePontos:    100,
+			DtCriacao:     time1,
+			DtAtualizacao: time2,
 		},
 		{
-			IdCustomer: "2",
+			IdCliente: "2",
 			// DescCustomerName: "Jane Doe",
 			// CodCpf:           "10987654321",
 			// DescEmail:        "jane@example.com",
@@ -63,9 +63,9 @@ func makeTables() []schemas.CustomerSchema {
 			// IdYouTube:        "47239645237",
 			// IdBlueSky:        "319042343124",
 			// IdInstagram:      "230949453223",
-			NrPoints:  200,
-			CreatedAt: time1,
-			UpdatedAt: time2,
+			QtdePontos:    200,
+			DtCriacao:     time1,
+			DtAtualizacao: time2,
 		},
 	}
 }

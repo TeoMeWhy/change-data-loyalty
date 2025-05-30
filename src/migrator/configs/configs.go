@@ -13,16 +13,16 @@ type Config struct {
 	UserDB     string `default:"user" split_words:"true"`
 	PasswordDB string `default:"password" split_words:"true"`
 
-	TransactionTableName       string `default:"transactions" split_words:"true"`
+	TransactionTableName       string `default:"transacoes" split_words:"true"`
 	TransactionTableSchemaName string `default:"points" split_words:"true"`
 
-	TransactionProductTableName       string `default:"transaction_product" split_words:"true"`
+	TransactionProductTableName       string `default:"transacao_produto" split_words:"true"`
 	TransactionProductTableSchemaName string `default:"points" split_words:"true"`
 
-	CustomerTableName       string `default:"customers" split_words:"true"`
+	CustomerTableName       string `default:"clientes" split_words:"true"`
 	CustomerTableSchemaName string `default:"points" split_words:"true"`
 
-	ProductTableName       string `default:"products" split_words:"true"`
+	ProductTableName       string `default:"produtos" split_words:"true"`
 	ProductTableSchemaName string `default:"points" split_words:"true"`
 }
 
